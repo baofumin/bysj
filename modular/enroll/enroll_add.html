@@ -1,0 +1,51 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/enroll/enroll_add.js"]}){
+<form id="enrollForm" lay-filter="enrollForm" class="layui-form model-form">
+    <input name="enrollId" type="hidden"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">身份证<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="cardNo" name="cardNo" placeholder="请输入身份证" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">民族<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="nations" name="nations" placeholder="请输入民族" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">性别<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="sex" name="sex" placeholder="请输入性别" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">考试<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="examId" name="examId" placeholder="请输入考试" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">姓名<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="name" name="name" placeholder="请输入姓名" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">联系电话<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="tel" name="tel" placeholder="请输入联系电话" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">学院<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="college" name="college" placeholder="请输入学院" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}

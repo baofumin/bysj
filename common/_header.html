@@ -1,0 +1,48 @@
+@/* 框架顶部 */
+<div class="layui-header">
+    <div class="layui-logo">
+        <!--<img src="${ctxPath}/assets/common/images/logo.png"/>-->
+        <i class="layui-icon"></i>
+        <cite>&nbsp;兴安盟学考报名系统 &emsp;</cite>
+    </div>
+    <ul class="layui-nav layui-layout-left">
+        <li class="layui-nav-item" lay-unselect>
+            <a ew-event="flexible" title="侧边伸缩"><i class="layui-icon layui-icon-shrink-right"></i></a>
+        </li>
+        <li class="layui-nav-item" lay-unselect>
+            <a ew-event="refresh" title="刷新"><i class="layui-icon layui-icon-refresh-3"></i></a>
+        </li>
+        <li class="layui-nav-item" lay-unselect>
+            <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=p4kqz45e" target="_blank"></a>
+        </li>
+       
+        <li class="layui-nav-item" lay-unselect>
+            <a style="color: #fe7300;" href="#" target="_blank">欢迎使用学业水平考试报名系统 </a>
+        </li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+        
+       
+        <li class="layui-nav-item" lay-unselect>
+            <a>
+               
+                <cite>${name!"用户"}</cite>
+            </a>
+            <dl class="layui-nav-child">
+                <dd lay-unselect>
+                    <a ew-href="${ctxPath}/system/user_info">个人中心</a>
+                </dd>
+                <dd lay-unselect>
+                    <a id="setPsw">变更密码</a>
+                </dd>
+                <hr>
+                <dd lay-unselect>
+                    <a id="btnLogout">退出</a>
+                </dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item" lay-unselect>
+            <a ew-event="theme" title=""></a>
+        </li>
+    </ul>
+</div>
