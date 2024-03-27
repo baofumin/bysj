@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "basics": "/pages/activity/news/news",
+    "plate": "/pages/activity/exam/exam",
+    "about":"/pages/about/home/home"
+   
+  }
+}

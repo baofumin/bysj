@@ -1,0 +1,32 @@
+<cu-custom bgColor="bg-cyan" isBack="{{true}}">
+<view slot="backText">返回</view>
+<view slot="content">考试详情</view>
+</cu-custom>
+<view class="bg-white padding">
+<view class="cu-card case isCard">
+  <view class="card_title">
+     {{info.name}}
+  </view>
+  <view class="text-red">时间:{{info.startTime}}-{{info.endTime}}</view>
+  <view class="padding text-align">
+    <view   wx:if="{{!info.t}}"      class="cu-bar btn-group">
+     
+    <button class="cu-btn bg-green shadow-blur round" data-id="{{info.housesId}}" bindtap="toReply" >我要报名</button>
+    <button class="cu-btn bg-red shadow-blur round" data-id="{{info.housesId}}" bindtap="toReply1" >查看成绩</button>
+    </view>
+  </view>
+  <view class="info_title">
+ 考试介绍
+  </view>
+  <view class="padding" style="padding-left:0px;padding-right:0px">
+    <rich-text nodes="{{info.introductio}}"></rich-text>  
+  </view>
+  
+ 
+ 
+
+</view>
+</view>
+
+
+
